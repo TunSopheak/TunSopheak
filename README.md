@@ -2,9 +2,9 @@
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&pause=1800&color=2563EB&center=true&vCenter=true&width=900&lines=Hello!+I'm+Tun+Sopheak+%F0%9F%91%8B;%F0%9F%8E%93+Computer+Science+student+at+RUPP;%F0%9F%92%BB+Python+%E2%80%A2+FastAPI+%E2%80%A2+IoT+%E2%80%A2+AI;%F0%9F%93%9A+Learning+by+building+and+sharing" alt="Typing SVG" />
 </p>
 
-# Hi, I'm Tun Sopheak 👋
+# Hello, I'm TUN Sopheak 👋
 
-I'm a **Computer Science student at the Royal University of Phnom Penh (RUPP)**.  
+I'm a **Fourth-Year Computer Science student at the Royal University of Phnom Penh (RUPP)**.  
 I enjoy learning by building practical projects, especially with **Python, FastAPI, IoT, and AI/Computer Vision**.
 
 ## 🚀 Featured Project
