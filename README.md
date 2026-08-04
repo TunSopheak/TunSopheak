@@ -150,7 +150,7 @@ Supporting repositories that reflect continuous practice in algorithms, database
 
 ## Live GitHub Analytics
 
-<img src="./assets/profile-analytics.svg?v=20260804095623" width="100%" alt="Automatically generated GitHub contribution and language analytics" />
+<img src="./assets/profile-analytics.svg?v=20260804095853" width="100%" alt="Automatically generated GitHub contribution and language analytics" />
 
 The dashboard is generated **inside this repository with GitHub Actions**. It tracks qualifying public GitHub contributions, summarizes the latest 26 weeks as a line chart, and refreshes automatically each day. GitHub may take up to 24 hours to credit a new qualifying contribution.
 
