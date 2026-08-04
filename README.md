@@ -24,7 +24,20 @@ I am a **fourth-year Computer Science student at the Royal University of Phnom P
 
 ## Technology Stack
 
-<img src="./assets/tech-stack.svg" width="100%" alt="Tun Sopheak technology stack" />
+### Programming Languages
+<p>
+  <img src="https://skillicons.dev/icons?i=python,java,c,cpp,cs,dart,js,php&perline=8" alt="Programming languages" />
+</p>
+
+### Web · Backend · Mobile
+<p>
+  <img src="https://skillicons.dev/icons?i=html,css,tailwind,react,fastapi,laravel,flutter&perline=7" alt="Web, backend and mobile technologies" />
+</p>
+
+### Databases · AI · IoT · Tools
+<p>
+  <img src="https://skillicons.dev/icons?i=mysql,postgres,sqlite,opencv,arduino,raspberrypi,git,github,vscode,figma,androidstudio,linux&perline=12" alt="Databases, AI, IoT and development tools" />
+</p>
 
 <details>
 <summary><strong>Detailed skills</strong></summary>
@@ -89,20 +102,55 @@ HTML · CSS · Tailwind CSS · JavaScript · GitHub Pages · Vercel
 
 </td>
 </tr>
+<tr>
+<td width="33%" valign="top">
+
+### 👟 Kick
+
+Web design course mini project focused on a modern sports e-commerce interface with collection browsing, product detail pages, favorites, cart, and brand-focused UI.
+
+**Stack**  
+HTML · CSS · JavaScript · Responsive UI · Vercel
+
+**Status:** `Portfolio Repository in Progress`
+
+[View repository →](https://github.com/TunSopheak/Kick)
+
+</td>
+<td width="33%" valign="top">
+
+### 📄 CurateCV Pro
+
+Resume builder prototype focused on generating a clean, ATS-friendly professional resume/CV workflow and portfolio-oriented export direction.
+
+**Stack**  
+TypeScript · Resume UX · DOCX Export · Product Prototype
+
+**Status:** `Paused / Portfolio Prototype`
+
+[View repository →](https://github.com/TunSopheak/curatecv-pro)
+
+</td>
+<td width="33%" valign="top">
+
+### 📚 Learning Repositories
+
+Supporting repositories that reflect continuous practice in algorithms, databases, architecture, and roadmap-based learning.
+
+- [Data Structure and Algorithm](https://github.com/TunSopheak/Data-Structure-and-Algorithm)
+- [Database SQL](https://github.com/TunSopheak/Database-SQL)
+- [Computer Architecture](https://github.com/TunSopheak/Computer-Architecture)
+- [My Roadmap](https://github.com/TunSopheak/my-roadmap)
+
+</td>
+</tr>
 </table>
-
-### More Learning Repositories
-
-- [Data Structure and Algorithm](https://github.com/TunSopheak/Data-Structure-and-Algorithm) — structured programming and algorithm practice
-- [Database SQL](https://github.com/TunSopheak/Database-SQL) — relational database and SQL exercises
-- [Computer Architecture](https://github.com/TunSopheak/Computer-Architecture) — university learning materials and practical work
-- [My Roadmap](https://github.com/TunSopheak/my-roadmap) — personal learning direction and progress
 
 ---
 
 ## Live GitHub Analytics
 
-<img src="./assets/profile-analytics.svg" width="100%" alt="Automatically generated GitHub contribution and language analytics" />
+<img src="./assets/profile-analytics.svg?v=20260804095623" width="100%" alt="Automatically generated GitHub contribution and language analytics" />
 
 The dashboard is generated **inside this repository with GitHub Actions**. It tracks qualifying public GitHub contributions, summarizes the latest 26 weeks as a line chart, and refreshes automatically each day. GitHub may take up to 24 hours to credit a new qualifying contribution.
 

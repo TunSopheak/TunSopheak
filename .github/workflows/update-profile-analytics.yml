@@ -39,16 +39,30 @@ jobs:
           GITHUB_USERNAME: TunSopheak
         run: python scripts/generate_profile_analytics.py
 
+      - name: Refresh README cache buster
+        shell: bash
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          from datetime import datetime, timezone
+          import re
+          path = Path('README.md')
+          text = path.read_text(encoding='utf-8')
+          token = datetime.now(timezone.utc).strftime('%Y%m%d%H%M%S')
+          text = re.sub(r'profile-analytics\.svg\?v=\d+', f'profile-analytics.svg?v={token}', text, count=1)
+          path.write_text(text, encoding='utf-8')
+          PY
+
       - name: Commit refreshed analytics when changed
         shell: bash
         run: |
-          if git diff --quiet -- assets/profile-analytics.svg; then
+          if git diff --quiet -- assets/profile-analytics.svg README.md; then
             echo "Analytics are already current."
             exit 0
           fi
 
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add assets/profile-analytics.svg
+          git add assets/profile-analytics.svg README.md
           git commit -m "chore: refresh profile analytics"
           git push
