@@ -8,8 +8,8 @@ on:
       - scripts/generate_profile_analytics.py
       - .github/workflows/update-profile-analytics.yml
   schedule:
-    # 17:23 UTC = 00:23 in Cambodia (UTC+7)
-    - cron: "23 17 * * *"
+    # Every six hours at minute 23 UTC: 01:23, 07:23, 13:23, and 19:23 in Cambodia.
+    - cron: "23 0,6,12,18 * * *"
   workflow_dispatch:
 
 permissions:
@@ -33,33 +33,36 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Generate live analytics SVG
+      - name: Generate analytics SVG
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITHUB_USERNAME: TunSopheak
         run: python scripts/generate_profile_analytics.py
 
-      - name: Refresh README cache buster
+      - name: Commit only when analytics changed
         shell: bash
         run: |
-          python - <<'PY'
-          from pathlib import Path
-          from datetime import datetime, timezone
-          import re
-          path = Path('README.md')
-          text = path.read_text(encoding='utf-8')
-          token = datetime.now(timezone.utc).strftime('%Y%m%d%H%M%S')
-          text = re.sub(r'profile-analytics\.svg\?v=\d+', f'profile-analytics.svg?v={token}', text, count=1)
-          path.write_text(text, encoding='utf-8')
-          PY
-
-      - name: Commit refreshed analytics when changed
-        shell: bash
-        run: |
-          if git diff --quiet -- assets/profile-analytics.svg README.md; then
-            echo "Analytics are already current."
+          if git diff --quiet -- assets/profile-analytics.svg; then
+            echo "No analytics data changed; no commit is needed."
             exit 0
           fi
+
+          python - <<'PY'
+          from datetime import datetime, timezone
+          from pathlib import Path
+          import re
+
+          path = Path("README.md")
+          text = path.read_text(encoding="utf-8")
+          token = datetime.now(timezone.utc).strftime("%Y%m%d%H%M%S")
+          text = re.sub(
+              r"profile-analytics\.svg\?v=\d+",
+              f"profile-analytics.svg?v={token}",
+              text,
+              count=1,
+          )
+          path.write_text(text, encoding="utf-8")
+          PY
 
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"

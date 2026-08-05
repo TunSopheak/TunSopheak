@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="./assets/profile-hero-v4.svg" width="100%" alt="Tun Sopheak — Computer Science Student and Software Developer" />
+<img src="./assets/profile-hero-v5.svg" width="100%" alt="Tun Sopheak — Computer Science Student and Software Developer" />
 
 </div>
 
@@ -44,15 +44,21 @@ Software design, testing, documentation, deployment, teamwork, and maintainable 
 
 ---
 
-## Technologies Used in Projects & Coursework
+## Core Technologies
 
-<div align="center">
+<img src="./assets/tech-stack.svg" width="100%" alt="Focused technology stack and current learning direction" />
 
-<img src="https://skillicons.dev/icons?i=python,html,css,tailwind,js,fastapi,sqlite,git,github,vscode,figma,opencv,raspberrypi&theme=dark&perline=13" alt="Technologies used across projects and coursework" />
+**Database focus:** PostgreSQL  
+**Relational database experience:** PostgreSQL · Microsoft SQL Server · SQLite  
+**Currently learning:** Docker · MongoDB
 
-</div>
+<details>
+<summary><strong>Additional coursework and project exposure</strong></summary>
+<br />
 
-<sub>These technologies reflect tools I have used in projects or coursework; they do not represent equal proficiency levels.</sub>
+C · C++ · PHP · Laravel basics · OpenCV · Raspberry Pi · SQLAlchemy · Figma
+
+</details>
 
 ---
 
@@ -141,9 +147,9 @@ Computer Science student
 
 ## GitHub Activity
 
-<img src="./assets/profile-analytics.svg?v=20260805001354" width="100%" alt="Automatically generated GitHub contribution and language analytics" />
+<img src="./assets/profile-analytics.svg?v=20260805004419" width="100%" alt="Automatically generated GitHub contribution and language analytics" />
 
-<sub>The analytics image is generated inside this profile repository and refreshed automatically by GitHub Actions.</sub>
+<sub>Scheduled to check public GitHub activity every six hours. The dashboard displays the latest successful refresh date, not a live clock.</sub>
 
 ---
 
