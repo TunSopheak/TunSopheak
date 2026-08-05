@@ -141,7 +141,7 @@ Computer Science student
 
 ## GitHub Activity
 
-<img src="./assets/profile-analytics.svg?v=20260805001041" width="100%" alt="Automatically generated GitHub contribution and language analytics" />
+<img src="./assets/profile-analytics.svg?v=20260805001354" width="100%" alt="Automatically generated GitHub contribution and language analytics" />
 
 <sub>The analytics image is generated inside this profile repository and refreshed automatically by GitHub Actions.</sub>
 
