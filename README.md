@@ -6,7 +6,7 @@
 
 ## About Me
 
-I am a **Computer Science student and software developer at the Royal University of Phnom Penh** with a growing focus on **web and backend development**.
+I am a **Computer Science student at the Royal University of Phnom Penh and a software developer** with a growing focus on **web and backend development**.
 
 I learn by building practical projects, working with teams, and improving academic work into clearer portfolio evidence. My long-term direction is **Software Engineering**, with an emphasis on maintainable systems, testing, architecture, and reliable delivery.
 
