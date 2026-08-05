@@ -1,146 +1,42 @@
 <div align="center">
 
-<img src="./assets/profile-banner.svg" width="100%" alt="Tun Sopheak — Computer Science student and software developer" />
-
-### Computer Science Student · Software Developer · Project Builder
-
-`Cambodia` · `Royal University of Phnom Penh` · `Open to internships and collaboration`
+<img src="./assets/profile-hero-v4.svg" width="100%" alt="Tun Sopheak — Computer Science Student and Software Developer" />
 
 </div>
 
----
-
 ## About Me
 
-I am a **fourth-year Computer Science student at the Royal University of Phnom Penh (RUPP)**. I learn by building practical software projects and improving them into clear, tested, and portfolio-ready work.
+I am a **Computer Science student and software developer at the Royal University of Phnom Penh** with a growing focus on **web and backend development**.
 
-- **Core interests:** Backend Development, Mobile Development, Software Engineering, AI/Computer Vision, and IoT
-- **Working style:** Requirements first, structured implementation, testing, documentation, and continuous improvement
-- **Career direction:** Software Developer / Backend Developer / Mobile Developer internship and junior opportunities
+I learn by building practical projects, working with teams, and improving academic work into clearer portfolio evidence. My long-term direction is **Software Engineering**, with an emphasis on maintainable systems, testing, architecture, and reliable delivery.
 
-> I aim to build technology that is useful, responsible, understandable, and grounded in real problems.
+> **Open to full-time, internship, freelance software development opportunities, and meaningful collaboration.**
 
 ---
 
-## Technology Stack
-
-### Programming Languages
-<p>
-  <img src="https://skillicons.dev/icons?i=python,java,c,cpp,cs,dart,js,php&perline=8" alt="Programming languages" />
-</p>
-
-### Web · Backend · Mobile
-<p>
-  <img src="https://skillicons.dev/icons?i=html,css,tailwind,react,fastapi,laravel,flutter&perline=7" alt="Web, backend and mobile technologies" />
-</p>
-
-### Databases · AI · IoT · Tools
-<p>
-  <img src="https://skillicons.dev/icons?i=mysql,postgres,sqlite,opencv,arduino,raspberrypi,git,github,vscode,figma,androidstudio,linux&perline=12" alt="Databases, AI, IoT and development tools" />
-</p>
-
-<details>
-<summary><strong>Detailed skills</strong></summary>
-<br />
-
-- **Programming:** Python, Java, C, C++, C#, Dart, JavaScript, PHP
-- **Web & Backend:** HTML, CSS, Tailwind CSS, React basics, FastAPI, Jinja2, Laravel basics, REST APIs
-- **Mobile & Design:** Flutter, Dart, Figma, Android Studio
-- **Databases:** MySQL, PostgreSQL, SQLite, SQL Server, SQL, ERD, database design
-- **AI & IoT:** OpenCV, face recognition, object detection, Raspberry Pi, Arduino, ESP32/ESP8266, sensors
-- **Engineering Tools:** Git, GitHub, VS Code, NetBeans, Postman, Linux basics, Windows PowerShell
-- **Analysis:** Requirements analysis, DFD, flowcharts, UML basics, system documentation
-
-</details>
-
----
-
-## Featured Projects
+## Current Focus
 
 <table>
 <tr>
 <td width="33%" valign="top">
 
-### 🏫 Smart Classroom AI
+### 🌐 Web Development
 
-Teacher-focused attendance and monitoring MVP with face recognition, QR backup, reports, and LAN demonstration workflows.
-
-**Stack**  
-Python · FastAPI · SQLite · SQLAlchemy · OpenCV · YOLO · Raspberry Pi
-
-**Status:** `MVP / Final Demo`
-
-[View repository →](https://github.com/TunSopheak/Smart-Classroom-AI-IoT)
+Responsive interfaces, structured pages, JavaScript interaction, and modern front-end workflows.
 
 </td>
 <td width="33%" valign="top">
 
-### 🌐 VitouLens AI
+### ⚙️ Backend & Data
 
-Experimental Chrome extension and local backend for English-to-Khmer technical-content translation with terminology and structure protection.
-
-**Stack**  
-JavaScript · Chrome MV3 · Python · FastAPI · NLLB · Gemini
-
-**Status:** `Paused / Portfolio Prototype`
-
-[View repository →](https://github.com/TunSopheak/vitoulens-ai)
+APIs, server-side logic, relational data, validation, and practical database-backed applications.
 
 </td>
 <td width="33%" valign="top">
 
-### 🛍️ PhsarKhmer Web App
+### 🧭 Engineering Direction
 
-Responsive Cambodian e-commerce UI portfolio refresh with deployment, local fallback content, and documented project evidence.
-
-**Stack**  
-HTML · CSS · Tailwind CSS · JavaScript · GitHub Pages · Vercel
-
-**Status:** `Deployed Portfolio Project`
-
-[View repository →](https://github.com/TunSopheak/PhsarKhmer-WebApp)
-
-</td>
-</tr>
-<tr>
-<td width="33%" valign="top">
-
-### 👟 Kick
-
-Web design course mini project focused on a modern sports e-commerce interface with collection browsing, product detail pages, favorites, cart, and brand-focused UI.
-
-**Stack**  
-HTML · CSS · JavaScript · Responsive UI · Vercel
-
-**Status:** `Portfolio Repository in Progress`
-
-[View repository →](https://github.com/TunSopheak/Kick)
-
-</td>
-<td width="33%" valign="top">
-
-### 📄 CurateCV Pro
-
-Resume builder prototype focused on generating a clean, ATS-friendly professional resume/CV workflow and portfolio-oriented export direction.
-
-**Stack**  
-TypeScript · Resume UX · DOCX Export · Product Prototype
-
-**Status:** `Paused / Portfolio Prototype`
-
-[View repository →](https://github.com/TunSopheak/curatecv-pro)
-
-</td>
-<td width="33%" valign="top">
-
-### 📚 Learning Repositories
-
-Supporting repositories that reflect continuous practice in algorithms, databases, architecture, and roadmap-based learning.
-
-- [Data Structure and Algorithm](https://github.com/TunSopheak/Data-Structure-and-Algorithm)
-- [Database SQL](https://github.com/TunSopheak/Database-SQL)
-- [Computer Architecture](https://github.com/TunSopheak/Computer-Architecture)
-- [My Roadmap](https://github.com/TunSopheak/my-roadmap)
+Software design, testing, documentation, deployment, teamwork, and maintainable development practices.
 
 </td>
 </tr>
@@ -148,34 +44,113 @@ Supporting repositories that reflect continuous practice in algorithms, database
 
 ---
 
-## Live GitHub Analytics
-
-<img src="./assets/profile-analytics.svg?v=20260804185833" width="100%" alt="Automatically generated GitHub contribution and language analytics" />
-
-The dashboard is generated **inside this repository with GitHub Actions**. It tracks qualifying public GitHub contributions, summarizes the latest 26 weeks as a line chart, and refreshes automatically each day. GitHub may take up to 24 hours to credit a new qualifying contribution.
-
----
-
-## Current Growth Areas
-
-| Area | Current direction |
-|---|---|
-| **Backend Engineering** | APIs, architecture, validation, testing, security, and maintainable services |
-| **Mobile Development** | Dart, Flutter, responsive interfaces, state, APIs, and databases |
-| **Software Engineering** | Requirements, UX flows, system design, documentation, teamwork, and delivery |
-| **AI & Computer Vision** | Responsible practical prototypes using OpenCV and object detection |
-| **Professional Development** | English communication, portfolio quality, GitHub workflow, and collaboration |
-
----
-
-## Professional Values
-
-`Learn continuously` · `Build responsibly` · `Document clearly` · `Test carefully` · `Improve consistently`
+## Technologies Used in Projects & Coursework
 
 <div align="center">
 
-### Thank you for visiting.
+<img src="https://skillicons.dev/icons?i=python,html,css,tailwind,js,fastapi,sqlite,git,github,vscode,figma,opencv,raspberrypi&theme=dark&perline=13" alt="Technologies used across projects and coursework" />
 
-**Build · Learn · Improve · Repeat**
+</div>
+
+<sub>These technologies reflect tools I have used in projects or coursework; they do not represent equal proficiency levels.</sub>
+
+---
+
+## Selected Projects
+
+<table>
+<tr>
+<td width="33%" valign="top">
+
+<img src="./assets/project-smart-classroom.svg" width="100%" alt="Smart Classroom AI project" />
+
+### Smart Classroom AI
+
+**Role:** Group Leader  
+**Context:** Academic group project · MVP / final demo
+
+Teacher-focused attendance and monitoring system using face recognition, QR attendance backup, reports, object detection, and local/LAN demonstration workflows.
+
+**Stack:** Python · FastAPI · SQLite · SQLAlchemy · OpenCV · YOLO · Raspberry Pi
+
+[Repository →](https://github.com/TunSopheak/Smart-Classroom-AI-IoT)
+
+</td>
+<td width="33%" valign="top">
+
+<img src="./assets/project-phsarkhmer.svg" width="100%" alt="PhsarKhmer Web App project" />
+
+### PhsarKhmer Web App
+
+**Role:** Team Member  
+**Context:** Web Design course team project
+
+Responsive Cambodian e-commerce interface with product, category, brand, promotion, search, authentication, cart, payment, and seller UI prototypes.
+
+**Stack:** HTML · CSS · Tailwind CSS · JavaScript · GitHub Pages · Vercel
+
+[Repository →](https://github.com/TunSopheak/PhsarKhmer-WebApp) · [Live demo →](https://phsar-khmer-web.vercel.app/)
+
+</td>
+<td width="33%" valign="top">
+
+<img src="./assets/project-kick.svg" width="100%" alt="Kick football footwear project" />
+
+### Kick Footwear Store
+
+**Role:** Team Member  
+**Context:** Web Design course mini project
+
+Responsive multi-page football footwear store covering collections, brands, players, product details, favorites, cart, sign-in, contact, and informational pages.
+
+**Stack:** HTML · Tailwind CSS · Font Awesome · Responsive Web Design · Vercel
+
+[Repository →](https://github.com/TunSopheak/Kick) · [Live demo →](https://kick-footwear-store.vercel.app)
+
+</td>
+</tr>
+</table>
+
+---
+
+## Education & Direction
+
+<table>
+<tr>
+<td width="50%" valign="top">
+
+### 🎓 Education
+
+**Royal University of Phnom Penh**  
+Computer Science student
+
+</td>
+<td width="50%" valign="top">
+
+### 🚀 Career Direction
+
+**Current identity:** Software Developer  
+**Current focus:** Web & Backend Development  
+**Long-term direction:** Software Engineering
+
+</td>
+</tr>
+</table>
+
+---
+
+## GitHub Activity
+
+<img src="./assets/profile-analytics.svg?v=20260805001041" width="100%" alt="Automatically generated GitHub contribution and language analytics" />
+
+<sub>The analytics image is generated inside this profile repository and refreshed automatically by GitHub Actions.</sub>
+
+---
+
+<div align="center">
+
+### Build practical software · Learn continuously · Improve responsibly
+
+**Thank you for visiting my profile.**
 
 </div>

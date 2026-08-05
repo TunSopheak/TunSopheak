@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360" role="img" aria-labelledby="title desc">
+<title id="title">Tun Sopheak — Computer Science Student and Software Developer</title>
+<desc id="desc">Modern profile banner highlighting web and backend focus and a long-term software engineering direction.</desc>
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#07111f"/>
+    <stop offset="0.55" stop-color="#0d1b2e"/>
+    <stop offset="1" stop-color="#15112a"/>
+  </linearGradient>
+  <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#58a6ff"/>
+    <stop offset="0.5" stop-color="#39d0d8"/>
+    <stop offset="1" stop-color="#a371f7"/>
+  </linearGradient>
+  <radialGradient id="glow1"><stop offset="0" stop-color="#58a6ff" stop-opacity=".38"/><stop offset="1" stop-color="#58a6ff" stop-opacity="0"/></radialGradient>
+  <radialGradient id="glow2"><stop offset="0" stop-color="#a371f7" stop-opacity=".32"/><stop offset="1" stop-color="#a371f7" stop-opacity="0"/></radialGradient>
+  <filter id="soft"><feGaussianBlur stdDeviation="20"/></filter>
+  <pattern id="grid" width="34" height="34" patternUnits="userSpaceOnUse"><path d="M34 0H0V34" fill="none" stroke="#8b949e" stroke-opacity=".08"/></pattern>
+  <style>
+    .name{font:800 52px 'Segoe UI',Arial,sans-serif;fill:#f0f6fc;letter-spacing:-1px}
+    .role{font:650 24px 'Segoe UI',Arial,sans-serif;fill:#dbeafe}
+    .focus{font:600 17px 'Segoe UI',Arial,sans-serif;fill:#9fb6d0}
+    .quote{font:500 14px 'Segoe UI',Arial,sans-serif;fill:#8b9bb0}
+    .chip{font:650 13px 'Segoe UI',Arial,sans-serif;fill:#dbeafe}
+    .terminal{font:600 15px ui-monospace,SFMono-Regular,Consolas,monospace;fill:#c9d1d9}
+    .terminalDim{font:600 15px ui-monospace,SFMono-Regular,Consolas,monospace;fill:#7d8da1}
+  </style>
+</defs>
+<rect width="1200" height="360" rx="28" fill="url(#bg)"/>
+<rect width="1200" height="360" rx="28" fill="url(#grid)"/>
+<circle cx="160" cy="40" r="220" fill="url(#glow1)" filter="url(#soft)"><animate attributeName="cx" values="150;230;150" dur="9s" repeatCount="indefinite"/></circle>
+<circle cx="1080" cy="320" r="250" fill="url(#glow2)" filter="url(#soft)"><animate attributeName="cy" values="320;245;320" dur="11s" repeatCount="indefinite"/></circle>
+<rect x="0" y="0" width="1200" height="6" rx="3" fill="url(#accent)"/>
+
+<g transform="translate(58 62)">
+  <circle cx="11" cy="10" r="6" fill="#3fb950"><animate attributeName="opacity" values="1;.35;1" dur="1.8s" repeatCount="indefinite"/></circle>
+  <text x="28" y="15" class="chip">OPEN TO FULL-TIME · INTERNSHIP · FREELANCE</text>
+  <text x="0" y="82" class="name">Tun Sopheak</text>
+  <text x="0" y="124" class="role">Computer Science Student &amp; Software Developer</text>
+  <rect x="0" y="146" width="520" height="3" rx="2" fill="url(#accent)"/>
+  <text x="0" y="182" class="focus">Web &amp; Backend Focus · Working toward Software Engineering</text>
+  <text x="0" y="216" class="quote">Building practical software through learning, teamwork, and steady improvement.</text>
+  <g transform="translate(0 246)">
+    <rect width="88" height="34" rx="17" fill="#161f2f" stroke="#2d425c"/><text x="44" y="22" text-anchor="middle" class="chip">RUPP</text>
+    <rect x="100" width="112" height="34" rx="17" fill="#161f2f" stroke="#2d425c"/><text x="156" y="22" text-anchor="middle" class="chip">Cambodia</text>
+    <rect x="224" width="178" height="34" rx="17" fill="#161f2f" stroke="#2d425c"/><text x="313" y="22" text-anchor="middle" class="chip">Web · Backend</text>
+  </g>
+</g>
+
+<g transform="translate(760 56)">
+  <rect width="380" height="248" rx="22" fill="#0b1220" fill-opacity=".88" stroke="#2c3d55"/>
+  <rect width="380" height="42" rx="22" fill="#121d2d"/>
+  <circle cx="24" cy="21" r="5" fill="#ff7b72"/><circle cx="43" cy="21" r="5" fill="#d29922"/><circle cx="62" cy="21" r="5" fill="#3fb950"/>
+  <text x="190" y="26" text-anchor="middle" class="terminalDim">profile.ts</text>
+  <text x="28" y="84" class="terminal"><tspan fill="#a371f7">const</tspan> identity = <tspan fill="#79c0ff">"software developer"</tspan>;</text>
+  <text x="28" y="124" class="terminal"><tspan fill="#a371f7">const</tspan> focus = [<tspan fill="#79c0ff">"web"</tspan>, <tspan fill="#79c0ff">"backend"</tspan>];</text>
+  <text x="28" y="164" class="terminal"><tspan fill="#a371f7">const</tspan> direction = <tspan fill="#79c0ff">"software engineering"</tspan>;</text>
+  <text x="28" y="214" class="terminalDim">// build · learn · improve · repeat</text>
+  <rect x="28" y="228" width="118" height="3" rx="2" fill="url(#accent)"><animate attributeName="width" values="30;250;118" dur="4s" repeatCount="indefinite"/></rect>
+</g>
+
+<g fill="#79c0ff" opacity=".65">
+  <circle cx="700" cy="40" r="3"><animate attributeName="cy" values="40;58;40" dur="4s" repeatCount="indefinite"/></circle>
+  <circle cx="1160" cy="80" r="4"><animate attributeName="cy" values="80;58;80" dur="5s" repeatCount="indefinite"/></circle>
+  <circle cx="715" cy="315" r="4"><animate attributeName="cx" values="715;735;715" dur="4.5s" repeatCount="indefinite"/></circle>
+</g>
+<rect x="1" y="1" width="1198" height="358" rx="27" fill="none" stroke="#2f3f57"/>
+</svg>
