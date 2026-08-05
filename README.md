@@ -44,19 +44,32 @@ Software design, testing, documentation, deployment, teamwork, and maintainable 
 
 ---
 
+
 ## Core Technologies
 
-<img src="./assets/tech-stack.svg" width="100%" alt="Focused technology stack and current learning direction" />
+### Technologies I use in projects and coursework
+
+<div align="center">
+
+<img src="https://skillicons.dev/icons?i=python,java,cs,js,html,css,tailwind,fastapi,postgres,sqlite,git,github,vscode,postman,figma&theme=dark&perline=8" alt="Core technologies used in projects and coursework" />
+
+</div>
 
 **Database focus:** PostgreSQL  
 **Relational database experience:** PostgreSQL · Microsoft SQL Server · SQLite  
 **Currently learning:** Docker · MongoDB
 
+<div align="center">
+
+<img src="https://skillicons.dev/icons?i=docker,mongodb&theme=dark&perline=2" alt="Currently learning Docker and MongoDB" />
+
+</div>
+
 <details>
 <summary><strong>Additional coursework and project exposure</strong></summary>
 <br />
 
-C · C++ · PHP · Laravel basics · OpenCV · Raspberry Pi · SQLAlchemy · Figma
+C · C++ · PHP · Laravel basics · OpenCV · Raspberry Pi · SQLAlchemy
 
 </details>
 
@@ -147,7 +160,7 @@ Computer Science student
 
 ## GitHub Activity
 
-<img src="./assets/profile-analytics.svg?v=20260805005047" width="100%" alt="Automatically generated GitHub contribution and language analytics" />
+<img src="./assets/profile-analytics.svg?v=20260805004419" width="100%" alt="Automatically generated GitHub contribution and language analytics" />
 
 <sub>Scheduled to check public GitHub activity every six hours. The dashboard displays the latest successful refresh date, not a live clock.</sub>
 
