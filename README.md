@@ -160,7 +160,7 @@ Computer Science student
 
 ## GitHub Activity
 
-<img src="./assets/profile-analytics.svg?v=20260828113000" width="100%" alt="Automatically generated GitHub contribution and language analytics" />
+<img src="./assets/profile-analytics.svg?v=20260828222619" width="100%" alt="Automatically generated GitHub contribution and language analytics" />
 
 <sub>Scheduled to check public GitHub activity every six hours. The dashboard displays the latest successful refresh date, not a live clock.</sub>
 
