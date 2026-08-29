@@ -2,17 +2,25 @@
 
 <img src="./assets/profile-hero-v5.svg" width="100%" alt="Tun Sopheak — Computer Science Student and Software Developer" />
 
+---
+
+[![Portfolio](https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://tun-sopheak-portfolio.vercel.app/)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/tun-sopheak/)
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/TunSopheak)
+[![Email](https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:sopheaktun.tsp@gmail.com)
+[![Telegram](https://img.shields.io/badge/Telegram-26A5E4?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/TUN_SOPHEAK)
+
 </div>
 
 ---
 
 ## 👨‍💻 About Me
 
+> **CS Student @ RUPP · Backend Developer · Java, Spring Boot, Python · Open to work**
+
 I'm a **Computer Science student at RUPP** and a **backend-focused developer** passionate about building scalable systems, clean APIs, and reliable software.
 
-My long-term direction is **Software Engineering**, with a focus on maintainable systems, architecture, testing, and reliable delivery.
-
-> **Open to full-time roles, internships, freelance work, and meaningful collaboration.**
+My long-term direction is **Software Engineering**, focusing on maintainable systems, architecture, testing, and delivery.
 
 ---
 
@@ -22,23 +30,20 @@ My long-term direction is **Software Engineering**, with a focus on maintainable
 <tr>
 <td width="33%" valign="top">
 
-### 🖥️ Backend Development
-
-Building scalable APIs, server-side logic, and data-driven applications with **Java, Spring Boot, and Python**.
-
-</td>
-<td width="33%" valign="top">
-
-### 🗄️ Database Systems
-
-Designing efficient schemas, optimizing queries, and working with **PostgreSQL, SQL Server, and SQLite**.
+### 🖥️ Backend
+APIs, server-side logic, data-driven applications with **Java · Spring Boot · Python**
 
 </td>
 <td width="33%" valign="top">
 
-### 🧭 Engineering Direction
+### 🗄️ Database
+Schema design, query optimization with **PostgreSQL · SQL Server · SQLite**
 
-Software design, system architecture, testing, documentation, and maintainable development practices.
+</td>
+<td width="33%" valign="top">
+
+### 🧭 Engineering
+System architecture, testing, documentation, and maintainable code
 
 </td>
 </tr>
@@ -48,25 +53,17 @@ Software design, system architecture, testing, documentation, and maintainable d
 
 ## 🛠️ Core Technologies
 
-### Backend & Languages
-
 <div align="center">
+
+### Backend & Languages
 
 <img src="https://skillicons.dev/icons?i=java,spring,python,fastapi,nodejs&theme=dark&perline=5" alt="Backend technologies" />
 
-</div>
-
 ### Database & Tools
-
-<div align="center">
 
 <img src="https://skillicons.dev/icons?i=postgres,sqlite,git,github,docker,vercel&theme=dark&perline=6" alt="Database and tools" />
 
-</div>
-
 ### Frontend (Supporting)
-
-<div align="center">
 
 <img src="https://skillicons.dev/icons?i=js,html,css,tailwind,astro,figma&theme=dark&perline=6" alt="Frontend technologies" />
 
@@ -74,7 +71,6 @@ Software design, system architecture, testing, documentation, and maintainable d
 
 <details>
 <summary><strong>📚 Additional Exposure</strong></summary>
-<br />
 
 C · C++ · PHP · Laravel basics · OpenCV · Raspberry Pi · SQLAlchemy
 
@@ -128,9 +124,9 @@ Bachelor of Science in Computer Science
 
 ## 📊 GitHub Activity
 
-<img src="./assets/profile-analytics.svg?v=20260829101705" width="100%" alt="Automatically generated GitHub contribution and language analytics" />
+<img src="./assets/profile-analytics.svg" width="100%" alt="Automatically generated GitHub contribution and language analytics" />
 
-<sub>Updated every six hours. Displays the latest successful refresh date, not a live clock.</sub>
+*Updated every six hours. Displays the latest successful refresh, not a live clock.*
 
 ---
 
