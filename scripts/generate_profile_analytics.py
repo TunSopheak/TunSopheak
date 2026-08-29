@@ -20,7 +20,7 @@ TOKEN = os.getenv("GH_TOKEN") or os.getenv("GITHUB_TOKEN")
 OUTPUT = Path("assets/profile-analytics.svg")
 CAMBODIA_TZ = timezone(timedelta(hours=7))
 
-# Official GitHub language colors (most common ones)
+# Official GitHub language colors
 LANGUAGE_COLORS = {
     "Python": "#3572A5",
     "C": "#555555",
@@ -193,12 +193,12 @@ def text(x: float, y: float, value: object, css: str, anchor: str = "start") -> 
 def build_svg(days: list[dict[str, Any]], languages: dict[str, int]) -> str:
     total, active_days, longest, current = contribution_stats(days)
     weekly = weekly_series(days)
-    top_languages = sorted(languages.items(), key=lambda item: item[1], reverse=True)[:6]
+    top_languages = sorted(languages.items(), key=lambda item: item[1], reverse=True)[:5]
     language_total = sum(value for _, value in top_languages) or 1
     refreshed = datetime.now(CAMBODIA_TZ).strftime("%d %b %Y")
 
-    width, height = 1040, 800
-    chart_x, chart_y, chart_w, chart_h = 78, 286, 896, 232
+    width, height = 1040, 780
+    chart_x, chart_y, chart_w, chart_h = 78, 292, 896, 220
 
     values = [value for _, value in weekly] or [0]
     rounded_max = max(5, int(math.ceil(max(max(values), 1) / 5.0) * 5))
@@ -218,123 +218,156 @@ def build_svg(days: list[dict[str, Any]], languages: dict[str, int]) -> str:
         else ""
     )
 
+    # Find peak for highlight
+    peak_idx = min(range(len(points)), key=lambda i: points[i][1]) if points else 0
+
     parts = [
         f"""<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" viewBox="0 0 {width} {height}" role="img" aria-labelledby="title desc">
 <title id="title">{esc(USERNAME)} GitHub analytics</title>
 <desc id="desc">Automatically generated public contribution summary, weekly trend, and repository language distribution.</desc>
 <defs>
   <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-    <stop offset="0%" stop-color="#0d1117"/>
+    <stop offset="0%" stop-color="#0b0f19"/>
     <stop offset="100%" stop-color="#111827"/>
   </linearGradient>
   <linearGradient id="line" x1="0" y1="0" x2="1" y2="0">
-    <stop offset="0%" stop-color="#1f6feb"/>
-    <stop offset="100%" stop-color="#79c0ff"/>
+    <stop offset="0%" stop-color="#3b82f6"/>
+    <stop offset="100%" stop-color="#93c5fd"/>
   </linearGradient>
   <linearGradient id="area" x1="0" y1="0" x2="0" y2="1">
-    <stop offset="0%" stop-color="#58a6ff" stop-opacity="0.35"/>
-    <stop offset="100%" stop-color="#58a6ff" stop-opacity="0.02"/>
+    <stop offset="0%" stop-color="#3b82f6" stop-opacity="0.28"/>
+    <stop offset="100%" stop-color="#3b82f6" stop-opacity="0.02"/>
   </linearGradient>
+  <linearGradient id="cardAccent" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0%" stop-color="#3b82f6"/>
+    <stop offset="100%" stop-color="#8b5cf6"/>
+  </linearGradient>
+  <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+    <feGaussianBlur stdDeviation="6" result="coloredBlur"/>
+    <feMerge>
+      <feMergeNode in="coloredBlur"/>
+      <feMergeNode in="SourceGraphic"/>
+    </feMerge>
+  </filter>
   <style>
-    .title {{ font-family: 'Segoe UI', system-ui, sans-serif; font-size: 28px; font-weight: 750; fill: #f0f6fc; }}
-    .subtitle {{ font-family: 'Segoe UI', system-ui, sans-serif; font-size: 14px; font-weight: 500; fill: #8b949e; }}
-    .metric {{ font-family: 'Segoe UI', system-ui, sans-serif; font-size: 32px; font-weight: 750; fill: #f0f6fc; }}
-    .metricLabel {{ font-family: 'Segoe UI', system-ui, sans-serif; font-size: 12px; font-weight: 650; fill: #8b949e; letter-spacing: 0.8px; }}
-    .section {{ font-family: 'Segoe UI', system-ui, sans-serif; font-size: 17px; font-weight: 700; fill: #c9d1d9; }}
-    .axis {{ font-family: 'Segoe UI', system-ui, sans-serif; font-size: 11.5px; font-weight: 500; fill: #6e7681; }}
-    .language {{ font-family: 'Segoe UI', system-ui, sans-serif; font-size: 14px; font-weight: 600; fill: #c9d1d9; }}
-    .percent {{ font-family: 'Segoe UI', system-ui, sans-serif; font-size: 13px; font-weight: 600; fill: #8b949e; }}
-    .footer {{ font-family: 'Segoe UI', system-ui, sans-serif; font-size: 12.5px; font-weight: 500; fill: #6e7681; }}
+    .title {{ font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; font-size: 26px; font-weight: 700; fill: #f1f5f9; }}
+    .subtitle {{ font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; font-size: 13.5px; font-weight: 500; fill: #94a3b8; }}
+    .metric {{ font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; font-size: 30px; font-weight: 750; fill: #f8fafc; }}
+    .metricLabel {{ font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; font-size: 11.5px; font-weight: 650; fill: #94a3b8; letter-spacing: 0.7px; }}
+    .section {{ font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; font-size: 16px; font-weight: 700; fill: #e2e8f0; }}
+    .axis {{ font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; font-size: 11px; font-weight: 500; fill: #64748b; }}
+    .language {{ font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; font-size: 13.5px; font-weight: 600; fill: #e2e8f0; }}
+    .percent {{ font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; font-size: 12.5px; font-weight: 600; fill: #94a3b8; }}
+    .footer {{ font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; font-size: 12px; font-weight: 500; fill: #64748b; }}
   </style>
 </defs>
 
 <!-- Background -->
-<rect width="{width}" height="{height}" rx="24" fill="url(#bg)" stroke="#30363d" stroke-width="1.5"/>
-<circle cx="920" cy="70" r="140" fill="#1f6feb" opacity="0.08"/>
+<rect width="{width}" height="{height}" rx="22" fill="url(#bg)" stroke="#1e293b" stroke-width="1.5"/>
+
+<!-- Soft decorative glow -->
+<circle cx="930" cy="60" r="130" fill="#3b82f6" opacity="0.07"/>
 
 <!-- Header -->
-{text(44, 52, "GitHub Activity", "title")}
-{text(44, 78, f"Public activity for @{USERNAME} · Generated inside this repository", "subtitle")}
-{text(996, 52, f"Last refreshed · {refreshed}", "subtitle", "end")}
+{text(44, 48, "GitHub Activity", "title")}
+{text(44, 72, f"Public activity for @{USERNAME} · Auto-generated", "subtitle")}
+{text(996, 48, f"Updated · {refreshed}", "subtitle", "end")}
 """
     ]
 
-    # Metric cards
+    # ========== METRIC CARDS ==========
     metrics = [
         ("CONTRIBUTIONS", total),
         ("ACTIVE DAYS", active_days),
-        ("LONGEST STREAK", f"{longest} days"),
-        ("CURRENT STREAK", f"{current} days"),
+        ("LONGEST STREAK", f"{longest}d"),
+        ("CURRENT STREAK", f"{current}d"),
     ]
-    card_y, card_h, gap = 108, 108, 16
+    card_y, card_h, gap = 96, 100, 14
     card_w = (width - 88 - gap * 3) / 4
 
     for index, (label, value) in enumerate(metrics):
         x = 44 + index * (card_w + gap)
+        # Card background
         parts.append(
-            f'<rect x="{x:.1f}" y="{card_y}" width="{card_w:.1f}" height="{card_h}" rx="16" fill="#161b22" stroke="#30363d"/>'
+            f'<rect x="{x:.1f}" y="{card_y}" width="{card_w:.1f}" height="{card_h}" rx="14" fill="#0f172a" stroke="#1e293b"/>'
         )
-        parts.append(text(x + 22, card_y + 46, value, "metric"))
-        parts.append(text(x + 22, card_y + 78, label, "metricLabel"))
+        # Top accent line
+        parts.append(
+            f'<rect x="{x + 16:.1f}" y="{card_y + 1}" width="{card_w - 32:.1f}" height="3" rx="1.5" fill="url(#cardAccent)"/>'
+        )
+        parts.append(text(x + 20, card_y + 48, value, "metric"))
+        parts.append(text(x + 20, card_y + 76, label, "metricLabel"))
 
-    # Chart section
-    parts.append(text(44, 252, "Contribution trend · latest 26 weeks", "section"))
+    # ========== CHART ==========
+    parts.append(text(44, 232, "Contribution trend · last 26 weeks", "section"))
     parts.append(
-        '<rect x="44" y="266" width="952" height="286" rx="18" fill="#161b22" stroke="#30363d"/>'
+        '<rect x="44" y="248" width="952" height="268" rx="16" fill="#0f172a" stroke="#1e293b"/>'
     )
 
-    # Grid + Y labels
+    # Grid lines + Y labels
     for step in range(5):
         y = chart_y + chart_h * step / 4
         value = round(rounded_max * (1 - step / 4))
         parts.append(
-            f'<line x1="{chart_x}" y1="{y:.1f}" x2="{chart_x + chart_w}" y2="{y:.1f}" stroke="#21262d"/>'
+            f'<line x1="{chart_x}" y1="{y:.1f}" x2="{chart_x + chart_w}" y2="{y:.1f}" stroke="#1e293b"/>'
         )
-        parts.append(text(chart_x - 14, y + 4, value, "axis", "end"))
+        parts.append(text(chart_x - 12, y + 4, value, "axis", "end"))
 
     if area:
         parts.append(f'<path d="{area}" fill="url(#area)"/>')
         parts.append(
-            f'<path d="{path}" fill="none" stroke="url(#line)" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>'
+            f'<path d="{path}" fill="none" stroke="url(#line)" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>'
         )
-        for x, y in points:
-            r = 3.8 if y == min(p[1] for p in points) else 3.2  # highlight peak
-            parts.append(
-                f'<circle cx="{x:.1f}" cy="{y:.1f}" r="{r}" fill="#79c0ff" stroke="#0d1117" stroke-width="2"/>'
-            )
+
+        for i, (x, y) in enumerate(points):
+            if i == peak_idx:
+                # Peak highlight
+                parts.append(
+                    f'<circle cx="{x:.1f}" cy="{y:.1f}" r="6" fill="#3b82f6" opacity="0.25"/>'
+                )
+                parts.append(
+                    f'<circle cx="{x:.1f}" cy="{y:.1f}" r="4.2" fill="#93c5fd" stroke="#0f172a" stroke-width="2"/>'
+                )
+            else:
+                parts.append(
+                    f'<circle cx="{x:.1f}" cy="{y:.1f}" r="3" fill="#60a5fa" stroke="#0f172a" stroke-width="1.8"/>'
+                )
 
     # X-axis labels
     for index, (week_date, _) in enumerate(weekly):
         if index % 5 == 0 or index == len(weekly) - 1:
             x = chart_x + chart_w * index / denominator
             parts.append(
-                text(x, chart_y + chart_h + 26, week_date.strftime("%b %d"), "axis", "middle")
+                text(x, chart_y + chart_h + 24, week_date.strftime("%b %d"), "axis", "middle")
             )
 
-    # Language distribution
-    parts.append(text(44, 596, "Public repository language distribution", "section"))
+    # ========== LANGUAGE DISTRIBUTION ==========
+    parts.append(text(44, 552, "Language distribution", "section"))
 
-    start_y = 622
+    start_y = 578
     for index, (language, size) in enumerate(top_languages):
-        row_y = start_y + index * 32
+        row_y = start_y + index * 30
         pct = size / language_total * 100
-        filled = 680 * pct / 100
-        color = LANGUAGE_COLORS.get(language, "#1f6feb")
+        filled = 700 * pct / 100
+        color = LANGUAGE_COLORS.get(language, "#3b82f6")
 
-        parts.append(text(44, row_y + 12, language, "language"))
+        parts.append(text(44, row_y + 11, language, "language"))
+        # Track
         parts.append(
-            f'<rect x="200" y="{row_y}" width="680" height="14" rx="7" fill="#21262d"/>'
+            f'<rect x="190" y="{row_y}" width="700" height="13" rx="6.5" fill="#1e293b"/>'
         )
+        # Fill
         parts.append(
-            f'<rect x="200" y="{row_y}" width="{max(filled, 4):.1f}" height="14" rx="7" fill="{color}"/>'
+            f'<rect x="190" y="{row_y}" width="{max(filled, 6):.1f}" height="13" rx="6.5" fill="{color}"/>'
         )
-        parts.append(text(900, row_y + 12, f"{pct:.1f}%", "percent"))
+        parts.append(text(910, row_y + 11, f"{pct:.1f}%", "percent"))
 
+    # Footer
     parts.append(
         text(
             996,
-            786,
-            "Repository bytes indicate code distribution — not proficiency.",
+            756,
+            "Based on public repository bytes · Not a measure of skill",
             "footer",
             "end",
         )
