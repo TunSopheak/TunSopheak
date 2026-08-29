@@ -73,7 +73,8 @@ def api_json(url: str, *, method: str = "GET", payload: dict[str, Any] | None = 
 
 def fetch_contributions() -> list[dict[str, Any]]:
     today = datetime.now(timezone.utc).date()
-    start = today - timedelta(days=364)
+    # Count from January 1 of the current year (same as GitHub profile)
+    start = date(today.year, 1, 1)
 
     query = """
     query($login: String!, $from: DateTime!, $to: DateTime!) {
@@ -170,7 +171,10 @@ def weekly_series(days: list[dict[str, Any]], weeks: int = 26) -> list[tuple[dat
     parsed = [
         (date.fromisoformat(day["date"]), int(day["contributionCount"])) for day in days
     ]
-    parsed = parsed[-weeks * 7 :]
+
+    # If the year so far has fewer than 26 weeks, just use what we have
+    if len(parsed) > weeks * 7:
+        parsed = parsed[-weeks * 7 :]
 
     result: list[tuple[date, int]] = []
     for index in range(0, len(parsed), 7):
@@ -196,7 +200,10 @@ def build_svg(days: list[dict[str, Any]], languages: dict[str, int]) -> str:
     weekly = weekly_series(days)
     top_languages = sorted(languages.items(), key=lambda item: item[1], reverse=True)[:5]
     language_total = sum(value for _, value in top_languages) or 1
-    refreshed = datetime.now(CAMBODIA_TZ).strftime("%d %b %Y · %H:%M")
+
+    now = datetime.now(CAMBODIA_TZ)
+    refreshed = now.strftime("%d %b %Y · %H:%M")
+    year = now.year
 
     width, height = 1040, 760
 
@@ -227,7 +234,7 @@ def build_svg(days: list[dict[str, Any]], languages: dict[str, int]) -> str:
     parts = [
         f"""<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" viewBox="0 0 {width} {height}" role="img" aria-labelledby="title desc">
 <title id="title">{esc(USERNAME)} · GitHub Activity</title>
-<desc id="desc">Live contribution analytics and language distribution</desc>
+<desc id="desc">Live contribution analytics and language distribution for {year}</desc>
 
 <defs>
   <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
@@ -268,7 +275,7 @@ def build_svg(days: list[dict[str, Any]], languages: dict[str, int]) -> str:
 
 <!-- Header -->
 {text(40, 42, "GitHub Activity", "title")}
-{text(40, 64, f"@{USERNAME} · Last 12 months", "subtitle")}
+{text(40, 64, f"@{USERNAME} · {year}", "subtitle")}
 {text(1000, 42, refreshed, "subtitle", "end")}
 
 <!-- Subtle top accent -->
@@ -291,19 +298,15 @@ def build_svg(days: list[dict[str, Any]], languages: dict[str, int]) -> str:
     for i, (value, label) in enumerate(metrics):
         x = start_x + i * (card_w + gap)
 
-        # Card
         parts.append(
             f'<rect x="{x}" y="100" width="{card_w}" height="92" rx="12" fill="#18181b" stroke="#27272a"/>'
         )
-        # Value
         parts.append(text(x + 20, 148, value, "metric"))
-        # Label
         parts.append(text(x + 20, 172, label, "metricLabel"))
 
     # ========== CHART ==========
-    parts.append(text(40, 230, "CONTRIBUTION TREND", "section"))
+    parts.append(text(40, 230, f"CONTRIBUTION TREND · {year}", "section"))
 
-    # Chart container
     parts.append(
         '<rect x="40" y="246" width="960" height="250" rx="14" fill="#18181b" stroke="#27272a"/>'
     )
@@ -354,20 +357,15 @@ def build_svg(days: list[dict[str, Any]], languages: dict[str, int]) -> str:
         bar_w = 720 * (pct / 100)
         color = LANGUAGE_COLORS.get(lang, "#3b82f6")
 
-        # Language name + colored dot
         parts.append(f'<circle cx="48" cy="{y + 6}" r="4.5" fill="{color}"/>')
         parts.append(text(62, y + 10, lang, "lang"))
 
-        # Track
         parts.append(
             f'<rect x="200" y="{y}" width="720" height="10" rx="5" fill="#27272a"/>'
         )
-        # Fill
         parts.append(
             f'<rect x="200" y="{y}" width="{max(bar_w, 8):.1f}" height="10" rx="5" fill="{color}"/>'
         )
-
-        # Percentage
         parts.append(text(940, y + 10, f"{pct:.1f}%", "pct"))
 
     # Footer
