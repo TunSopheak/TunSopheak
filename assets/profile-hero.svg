@@ -110,10 +110,10 @@
   <!-- ========================================== -->
   <!-- RIGHT COLUMN: TERMINAL WINDOW             -->
   <!-- ========================================== -->
-  <g transform="translate(790 56)">
+  <g transform="translate(760 56)">
     
     <!-- Window Background (Simplified – no clipPath) -->
-    <rect width="400" height="248" rx="12" fill="#0d1117" stroke="#30363d" stroke-width="1.5"/>
+    <rect width="450" height="248" rx="12" fill="#0d1117" stroke="#30363d" stroke-width="1.5"/>
     
     <!-- Header Bar -->
     <rect x="0" y="0" width="380" height="42" rx="12" ry="12" fill="#161b22"/>
