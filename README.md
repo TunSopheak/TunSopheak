@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="./assets/profile-hero-v5.svg" width="100%" alt="Tun Sopheak — Computer Science Student and Software Developer" />
+  <img src="./assets/profile-hero.svg" width="100%" alt="Tun Sopheak — Computer Science Student and Software Developer" />
 </div>
 
 ---
