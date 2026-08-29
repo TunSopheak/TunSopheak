@@ -16,7 +16,7 @@
 
 ---
 
-## 👨‍💻 About Me
+## About Me
 
 > **CS Student @ RUPP · Backend Developer · Java, Spring Boot, Python · Open to work**
 
@@ -26,25 +26,25 @@ My long-term direction is **Software Engineering**, focusing on maintainable sys
 
 ---
 
-## 🎯 Current Focus
+## Current Focus
 
 <table>
   <tr>
     <td width="33%" valign="top">
 
-### 🖥️ Backend
+### Backend
 APIs, server-side logic, and data-driven applications with **Java · Spring Boot · Python**
 
 </td>
     <td width="33%" valign="top">
 
-### 🗄️ Database
+### Database
 Schema design and query optimization with **PostgreSQL · SQL Server · SQLite**
 
 </td>
     <td width="33%" valign="top">
 
-### 🧭 Engineering
+### Engineering
 System architecture, testing, documentation, and maintainable code
 
 </td>
@@ -53,23 +53,26 @@ System architecture, testing, documentation, and maintainable code
 
 ---
 
-## 🛠️ Core Technologies
+## Core Technologies
 
 <div align="center">
 
-### Backend & Languages
+**Backend & Languages**
+
 <img src="https://skillicons.dev/icons?i=java,spring,python,fastapi,nodejs&theme=dark&perline=5" alt="Backend technologies" />
 
-### Database & Tools
+**Database & Tools**
+
 <img src="https://skillicons.dev/icons?i=postgres,sqlite,git,github,docker,vercel&theme=dark&perline=6" alt="Database and tools" />
 
-### Frontend (Supporting)
+**Frontend (Supporting)**
+
 <img src="https://skillicons.dev/icons?i=js,html,css,tailwind,astro,figma&theme=dark&perline=6" alt="Frontend technologies" />
 
 </div>
 
 <details>
-<summary><strong>📚 Additional Exposure</strong></summary>
+<summary><strong>Additional Exposure</strong></summary>
 
 C · C++ · PHP · Laravel basics · OpenCV · Raspberry Pi · SQLAlchemy
 
@@ -77,13 +80,13 @@ C · C++ · PHP · Laravel basics · OpenCV · Raspberry Pi · SQLAlchemy
 
 ---
 
-## 🎓 Education & Direction
+## Education & Direction
 
 <table>
   <tr>
     <td width="50%" valign="top">
 
-### 🎓 Education
+### Education
 
 **Royal University of Phnom Penh (RUPP)**  
 Bachelor of Science in Computer Science  
@@ -102,7 +105,7 @@ Bachelor of Science in Computer Science
 </td>
     <td width="50%" valign="top">
 
-### 🚀 Career Direction
+### Career Direction
 
 **Current Identity:** Backend Developer  
 **Primary Stack:** Java, Spring Boot, Python, PostgreSQL  
@@ -120,9 +123,9 @@ Bachelor of Science in Computer Science
 
 ---
 
-## 📊 GitHub Activity
+## GitHub Activity
 
-<img src="./assets/profile-analytics.svg?v=20260829112253" width="100%" alt="Automatically generated GitHub contribution and language analytics" />
+<img src="./assets/profile-analytics.svg?v=1" width="100%" alt="Automatically generated GitHub contribution and language analytics" />
 
 *Updated automatically every 6 hours via GitHub Actions.*
 
@@ -130,8 +133,8 @@ Bachelor of Science in Computer Science
 
 <div align="center">
 
-### Build practical software · Learn continuously · Improve responsibly
+**Build practical software · Learn continuously · Improve responsibly**
 
-**Thank you for visiting my profile.**
+Thank you for visiting my profile.
 
 </div>
