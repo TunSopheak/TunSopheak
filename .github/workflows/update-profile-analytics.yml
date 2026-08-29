@@ -34,7 +34,7 @@ jobs:
 
       - name: Generate analytics SVG
         env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_TOKEN: ${{ secrets.GH_PAT }}
           GITHUB_USERNAME: TunSopheak
         run: python scripts/generate_profile_analytics.py
 
