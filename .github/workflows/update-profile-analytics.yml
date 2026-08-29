@@ -8,7 +8,7 @@ on:
       - scripts/generate_profile_analytics.py
       - .github/workflows/update-profile-analytics.yml
   schedule:
-    # Every six hours at minute 23 UTC: 01:23, 07:23, 13:23, and 19:23 in Cambodia.
+    # Every 6 hours at minute 23 UTC → 07:23, 13:23, 19:23, 01:23 Cambodia time
     - cron: "23 0,6,12,18 * * *"
   workflow_dispatch:
 
@@ -23,9 +23,8 @@ jobs:
   generate:
     runs-on: ubuntu-latest
     timeout-minutes: 10
-
     steps:
-      - name: Check out profile repository
+      - name: Check out repository
         uses: actions/checkout@v4
 
       - name: Set up Python
@@ -43,10 +42,11 @@ jobs:
         shell: bash
         run: |
           if git diff --quiet -- assets/profile-analytics.svg; then
-            echo "No analytics data changed; no commit is needed."
+            echo "No analytics data changed; skipping commit."
             exit 0
           fi
 
+          # Update cache-busting query in README
           python - <<'PY'
           from datetime import datetime, timezone
           from pathlib import Path
