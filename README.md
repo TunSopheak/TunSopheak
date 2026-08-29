@@ -4,39 +4,41 @@
 
 </div>
 
-## About Me
+---
 
-I am a **Computer Science student at the Royal University of Phnom Penh and a software developer** with a growing focus on **web and backend development**.
+## 👨‍💻 About Me
 
-I learn by building practical projects, working with teams, and improving academic work into clearer portfolio evidence. My long-term direction is **Software Engineering**, with an emphasis on maintainable systems, testing, architecture, and reliable delivery.
+I'm a **Computer Science student at RUPP** and a **backend-focused developer** passionate about building scalable systems, clean APIs, and reliable software.
 
-> **Open to full-time, internship, freelance software development opportunities, and meaningful collaboration.**
+My long-term direction is **Software Engineering**, with a focus on maintainable systems, architecture, testing, and reliable delivery.
+
+> **Open to full-time roles, internships, freelance work, and meaningful collaboration.**
 
 ---
 
-## Current Focus
+## 🎯 Current Focus
 
 <table>
 <tr>
 <td width="33%" valign="top">
 
-### 🌐 Web Development
+### 🖥️ Backend Development
 
-Responsive interfaces, structured pages, JavaScript interaction, and modern front-end workflows.
+Building scalable APIs, server-side logic, and data-driven applications with **Java, Spring Boot, and Python**.
 
 </td>
 <td width="33%" valign="top">
 
-### ⚙️ Backend & Data
+### 🗄️ Database Systems
 
-APIs, server-side logic, relational data, validation, and practical database-backed applications.
+Designing efficient schemas, optimizing queries, and working with **PostgreSQL, SQL Server, and SQLite**.
 
 </td>
 <td width="33%" valign="top">
 
 ### 🧭 Engineering Direction
 
-Software design, testing, documentation, deployment, teamwork, and maintainable development practices.
+Software design, system architecture, testing, documentation, and maintainable development practices.
 
 </td>
 </tr>
@@ -44,29 +46,34 @@ Software design, testing, documentation, deployment, teamwork, and maintainable 
 
 ---
 
+## 🛠️ Core Technologies
 
-## Core Technologies
-
-### Technologies I use in projects and coursework
+### Backend & Languages
 
 <div align="center">
 
-<img src="https://skillicons.dev/icons?i=python,java,cs,js,html,css,tailwind,fastapi,postgres,sqlite,git,github,vscode,postman,figma&theme=dark&perline=8" alt="Core technologies used in projects and coursework" />
+<img src="https://skillicons.dev/icons?i=java,spring,python,fastapi,nodejs&theme=dark&perline=5" alt="Backend technologies" />
 
 </div>
 
-**Database focus:** PostgreSQL  
-**Relational database experience:** PostgreSQL · Microsoft SQL Server · SQLite  
-**Currently learning:** Docker · MongoDB
+### Database & Tools
 
 <div align="center">
 
-<img src="https://skillicons.dev/icons?i=docker,mongodb&theme=dark&perline=2" alt="Currently learning Docker and MongoDB" />
+<img src="https://skillicons.dev/icons?i=postgres,sqlite,git,github,docker,vercel&theme=dark&perline=6" alt="Database and tools" />
+
+</div>
+
+### Frontend (Supporting)
+
+<div align="center">
+
+<img src="https://skillicons.dev/icons?i=js,html,css,tailwind,astro,figma&theme=dark&perline=6" alt="Frontend technologies" />
 
 </div>
 
 <details>
-<summary><strong>Additional coursework and project exposure</strong></summary>
+<summary><strong>📚 Additional Exposure</strong></summary>
 <br />
 
 C · C++ · PHP · Laravel basics · OpenCV · Raspberry Pi · SQLAlchemy
@@ -75,56 +82,50 @@ C · C++ · PHP · Laravel basics · OpenCV · Raspberry Pi · SQLAlchemy
 
 ---
 
-## Selected Projects
+## 📂 Selected Projects
 
 <table>
 <tr>
 <td width="33%" valign="top">
 
-<img src="./assets/project-smart-classroom.svg" width="100%" alt="Smart Classroom AI project" />
-
-### Smart Classroom AI
+### 🧠 Smart Classroom AI
 
 **Role:** Group Leader  
-**Context:** Academic group project · MVP / final demo
+**Context:** Academic Group Project
 
-Teacher-focused attendance and monitoring system using face recognition, QR attendance backup, reports, object detection, and local/LAN demonstration workflows.
+Attendance and monitoring system using face recognition, QR attendance, and object detection.
 
-**Stack:** Python · FastAPI · SQLite · SQLAlchemy · OpenCV · YOLO · Raspberry Pi
+**Stack:** Python · FastAPI · SQLite · OpenCV · YOLO · Raspberry Pi
 
 [Repository →](https://github.com/TunSopheak/Smart-Classroom-AI-IoT)
 
 </td>
 <td width="33%" valign="top">
 
-<img src="./assets/project-phsarkhmer.svg" width="100%" alt="PhsarKhmer Web App project" />
-
-### PhsarKhmer Web App
+### 🛒 PhsarKhmer Web App
 
 **Role:** Team Member  
-**Context:** Web Design course team project
+**Context:** Web Design Course
 
-Responsive Cambodian e-commerce interface with product, category, brand, promotion, search, authentication, cart, payment, and seller UI prototypes.
+Responsive Cambodian e-commerce interface with product browsing, cart, and authentication prototypes.
 
-**Stack:** HTML · CSS · Tailwind CSS · JavaScript · GitHub Pages · Vercel
+**Stack:** HTML · Tailwind CSS · JavaScript · Vercel
 
-[Repository →](https://github.com/TunSopheak/PhsarKhmer-WebApp) · [Live demo →](https://phsar-khmer-web.vercel.app/)
+[Repository →](https://github.com/TunSopheak/PhsarKhmer-WebApp) · [Live Demo →](https://phsar-khmer-web.vercel.app/)
 
 </td>
 <td width="33%" valign="top">
 
-<img src="./assets/project-kick.svg" width="100%" alt="Kick football footwear project" />
-
-### Kick Footwear Store
+### 👟 Kick Footwear Store
 
 **Role:** Team Member  
-**Context:** Web Design course mini project
+**Context:** Web Design Mini Project
 
-Responsive multi-page football footwear store covering collections, brands, players, product details, favorites, cart, sign-in, contact, and informational pages.
+Multi-page football footwear storefront with collections, brands, and product details.
 
-**Stack:** HTML · Tailwind CSS · Font Awesome · Responsive Web Design · Vercel
+**Stack:** HTML · Tailwind CSS · Font Awesome · Vercel
 
-[Repository →](https://github.com/TunSopheak/Kick) · [Live demo →](https://kick-footwear-store.vercel.app)
+[Repository →](https://github.com/TunSopheak/Kick) · [Live Demo →](https://kick-footwear-store.vercel.app/)
 
 </td>
 </tr>
@@ -132,7 +133,7 @@ Responsive multi-page football footwear store covering collections, brands, play
 
 ---
 
-## Education & Direction
+## 🎓 Education & Direction
 
 <table>
 <tr>
@@ -141,16 +142,16 @@ Responsive multi-page football footwear store covering collections, brands, play
 ### 🎓 Education
 
 **Royal University of Phnom Penh**  
-Computer Science student
+Computer Science (2023–2027)
 
 </td>
 <td width="50%" valign="top">
 
 ### 🚀 Career Direction
 
-**Current identity:** Software Developer  
-**Current focus:** Web & Backend Development  
-**Long-term direction:** Software Engineering
+**Current Identity:** Backend Developer  
+**Current Focus:** Web & Backend Development  
+**Long-term Direction:** Software Engineering
 
 </td>
 </tr>
@@ -158,11 +159,11 @@ Computer Science student
 
 ---
 
-## GitHub Activity
+## 📊 GitHub Activity
 
 <img src="./assets/profile-analytics.svg?v=20260829070930" width="100%" alt="Automatically generated GitHub contribution and language analytics" />
 
-<sub>Scheduled to check public GitHub activity every six hours. The dashboard displays the latest successful refresh date, not a live clock.</sub>
+<sub>Updated every six hours. Displays the latest successful refresh date, not a live clock.</sub>
 
 ---
 
