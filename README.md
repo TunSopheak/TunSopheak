@@ -82,57 +82,6 @@ C · C++ · PHP · Laravel basics · OpenCV · Raspberry Pi · SQLAlchemy
 
 ---
 
-## 📂 Selected Projects
-
-<table>
-<tr>
-<td width="33%" valign="top">
-
-### 🧠 Smart Classroom AI
-
-**Role:** Group Leader  
-**Context:** Academic Group Project
-
-Attendance and monitoring system using face recognition, QR attendance, and object detection.
-
-**Stack:** Python · FastAPI · SQLite · OpenCV · YOLO · Raspberry Pi
-
-[Repository →](https://github.com/TunSopheak/Smart-Classroom-AI-IoT)
-
-</td>
-<td width="33%" valign="top">
-
-### 🛒 PhsarKhmer Web App
-
-**Role:** Team Member  
-**Context:** Web Design Course
-
-Responsive Cambodian e-commerce interface with product browsing, cart, and authentication prototypes.
-
-**Stack:** HTML · Tailwind CSS · JavaScript · Vercel
-
-[Repository →](https://github.com/TunSopheak/PhsarKhmer-WebApp) · [Live Demo →](https://phsar-khmer-web.vercel.app/)
-
-</td>
-<td width="33%" valign="top">
-
-### 👟 Kick Footwear Store
-
-**Role:** Team Member  
-**Context:** Web Design Mini Project
-
-Multi-page football footwear storefront with collections, brands, and product details.
-
-**Stack:** HTML · Tailwind CSS · Font Awesome · Vercel
-
-[Repository →](https://github.com/TunSopheak/Kick) · [Live Demo →](https://kick-footwear-store.vercel.app/)
-
-</td>
-</tr>
-</table>
-
----
-
 ## 🎓 Education & Direction
 
 <table>
@@ -141,8 +90,19 @@ Multi-page football footwear storefront with collections, brands, and product de
 
 ### 🎓 Education
 
-**Royal University of Phnom Penh**  
-Computer Science (2023–2027)
+**Royal University of Phnom Penh (RUPP)**  
+Bachelor of Science in Computer Science  
+*2023 – 2027*
+
+**GPA:** 3.70 / 4.00
+
+**Relevant Coursework:**
+- Data Structures & Algorithms
+- Database Systems
+- Web Development
+- Software Engineering
+- Networking
+- Operating Systems
 
 </td>
 <td width="50%" valign="top">
@@ -150,8 +110,15 @@ Computer Science (2023–2027)
 ### 🚀 Career Direction
 
 **Current Identity:** Backend Developer  
+**Primary Stack:** Java, Spring Boot, Python, PostgreSQL  
 **Current Focus:** Web & Backend Development  
+
 **Long-term Direction:** Software Engineering
+
+**Career Goals:**
+- Build scalable, maintainable backend systems
+- Contribute to meaningful software projects
+- Grow into a full-stack or backend engineering role
 
 </td>
 </tr>
@@ -161,7 +128,7 @@ Computer Science (2023–2027)
 
 ## 📊 GitHub Activity
 
-<img src="./assets/profile-analytics.svg?v=20260829101444" width="100%" alt="Automatically generated GitHub contribution and language analytics" />
+<img src="./assets/profile-analytics.svg?v=20260829070930" width="100%" alt="Automatically generated GitHub contribution and language analytics" />
 
 <sub>Updated every six hours. Displays the latest successful refresh date, not a live clock.</sub>
 
