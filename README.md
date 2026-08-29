@@ -1,8 +1,10 @@
 <div align="center">
-
-<img src="./assets/profile-hero-v5.svg" width="100%" alt="Tun Sopheak — Computer Science Student and Software Developer" />
+  <img src="./assets/profile-hero-v5.svg" width="100%" alt="Tun Sopheak — Computer Science Student and Software Developer" />
+</div>
 
 ---
+
+<div align="center">
 
 [![Portfolio](https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://tun-sopheak-portfolio.vercel.app/)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/tun-sopheak/)
@@ -27,26 +29,26 @@ My long-term direction is **Software Engineering**, focusing on maintainable sys
 ## 🎯 Current Focus
 
 <table>
-<tr>
-<td width="33%" valign="top">
+  <tr>
+    <td width="33%" valign="top">
 
 ### 🖥️ Backend
-APIs, server-side logic, data-driven applications with **Java · Spring Boot · Python**
+APIs, server-side logic, and data-driven applications with **Java · Spring Boot · Python**
 
 </td>
-<td width="33%" valign="top">
+    <td width="33%" valign="top">
 
 ### 🗄️ Database
-Schema design, query optimization with **PostgreSQL · SQL Server · SQLite**
+Schema design and query optimization with **PostgreSQL · SQL Server · SQLite**
 
 </td>
-<td width="33%" valign="top">
+    <td width="33%" valign="top">
 
 ### 🧭 Engineering
 System architecture, testing, documentation, and maintainable code
 
 </td>
-</tr>
+  </tr>
 </table>
 
 ---
@@ -56,15 +58,12 @@ System architecture, testing, documentation, and maintainable code
 <div align="center">
 
 ### Backend & Languages
-
 <img src="https://skillicons.dev/icons?i=java,spring,python,fastapi,nodejs&theme=dark&perline=5" alt="Backend technologies" />
 
 ### Database & Tools
-
 <img src="https://skillicons.dev/icons?i=postgres,sqlite,git,github,docker,vercel&theme=dark&perline=6" alt="Database and tools" />
 
 ### Frontend (Supporting)
-
 <img src="https://skillicons.dev/icons?i=js,html,css,tailwind,astro,figma&theme=dark&perline=6" alt="Frontend technologies" />
 
 </div>
@@ -81,8 +80,8 @@ C · C++ · PHP · Laravel basics · OpenCV · Raspberry Pi · SQLAlchemy
 ## 🎓 Education & Direction
 
 <table>
-<tr>
-<td width="50%" valign="top">
+  <tr>
+    <td width="50%" valign="top">
 
 ### 🎓 Education
 
@@ -101,14 +100,13 @@ Bachelor of Science in Computer Science
 - Operating Systems
 
 </td>
-<td width="50%" valign="top">
+    <td width="50%" valign="top">
 
 ### 🚀 Career Direction
 
 **Current Identity:** Backend Developer  
 **Primary Stack:** Java, Spring Boot, Python, PostgreSQL  
 **Current Focus:** Web & Backend Development  
-
 **Long-term Direction:** Software Engineering
 
 **Career Goals:**
@@ -117,16 +115,16 @@ Bachelor of Science in Computer Science
 - Grow into a full-stack or backend engineering role
 
 </td>
-</tr>
+  </tr>
 </table>
 
 ---
 
 ## 📊 GitHub Activity
 
-<img src="./assets/profile-analytics.svg" width="100%" alt="Automatically generated GitHub contribution and language analytics" />
+<img src="./assets/profile-analytics.svg?v=1" width="100%" alt="Automatically generated GitHub contribution and language analytics" />
 
-*Updated every six hours. Displays the latest successful refresh, not a live clock.*
+*Updated automatically every 6 hours via GitHub Actions.*
 
 ---
 
